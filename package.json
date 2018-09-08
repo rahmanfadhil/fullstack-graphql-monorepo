@@ -1,0 +1,25 @@
+{
+  "name": "fullstack-graphql-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Rahman Fadhil <rhmnfadhil@gmail.com> (http://rahmanfadhil.com)",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prisma:deploy": "prisma deploy && yarn prisma:postdeploy",
+    "prisma:postdeploy": "graphql get-schema --endpoint http://localhost:4466 --output ./packages/server/src/generated/prisma.graphql --header Authorization=\"Bearer $(prisma token)\""
+  },
+  "devDependencies": {
+    "graphql-cli": "^2.16.7",
+    "husky": "^0.14.3",
+    "lerna": "^3.1.4",
+    "prettier": "^1.14.2",
+    "pretty-quick": "^1.6.0"
+  },
+  "dependencies": {
+    "prisma": "^1.15.3"
+  }
+}

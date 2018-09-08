@@ -1,0 +1,19 @@
+type User {
+  id: ID! @unique
+  name: String!
+  email: String!
+  password: String
+
+  auth_provider: AuthPovider!
+  auth_id: String!
+  email_verified: Boolean @default(value: "false")
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+enum AuthPovider {
+  EMAIL
+  GOOGLE
+  FACEBOOK
+}
