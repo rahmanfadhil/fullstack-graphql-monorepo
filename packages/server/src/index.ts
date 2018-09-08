@@ -11,6 +11,7 @@ interface IContext extends ContextParameters {
 }
 
 const server = new GraphQLServer({
+  resolverValidationOptions: { requireResolversForResolveType: false },
   typeDefs: join(__dirname, "./schema.graphql"),
   resolvers: {
     Query: {
