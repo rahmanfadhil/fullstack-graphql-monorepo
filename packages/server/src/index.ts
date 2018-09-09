@@ -1,8 +1,8 @@
 import { GraphQLServer } from "graphql-yoga";
 import { Prisma, forwardTo } from "prisma-binding";
-import { join } from "path";
 import { ContextParameters } from "graphql-yoga/dist/types";
 import { hashSync, genSaltSync, compareSync } from "bcrypt";
+import { join } from "path";
 import * as jwt from "jsonwebtoken";
 import * as uniqid from "uniqid";
 
