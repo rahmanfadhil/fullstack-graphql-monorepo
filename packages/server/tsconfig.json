@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "moduleResolution": "node",
-    "lib": ["es2015"],
+    "lib": ["esnext", "dom"],
     "outDir": "dist"
-  }
+  },
+  "exclude": ["node_modules"]
 }
