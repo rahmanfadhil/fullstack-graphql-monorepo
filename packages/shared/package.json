@@ -1,0 +1,13 @@
+{
+  "name": "@fullstack-graphql-monorepo/shared",
+  "version": "1.0.0",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "author": "Rahman Fadhil <rhmnfadhil@gmail.com> (http://rahmanfadhil.com)",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "postinstall": "yarn build"
+  }
+}
