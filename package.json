@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "prisma:deploy": "prisma deploy && yarn prisma:postdeploy",
-    "prisma:postdeploy": "graphql get-schema --endpoint http://localhost:4466 --output ./packages/server/src/generated/prisma.graphql --header Authorization=\"Bearer $(prisma token)\""
+    "prisma:postdeploy": "graphql get-schema --endpoint http://localhost:4466 --output ./packages/server/src/generated/prisma.graphql --header Authorization=\"Bearer $(prisma token)\"",
+    "precommit": "pretty-quick --staged"
   },
   "devDependencies": {
     "graphql-cli": "^2.16.7",

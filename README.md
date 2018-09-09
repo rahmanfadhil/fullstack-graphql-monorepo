@@ -17,3 +17,4 @@ This project includes:
 - PostgresQL
 - Lerna
 - Yarn Workspaces
+- TSLint
