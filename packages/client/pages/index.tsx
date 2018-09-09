@@ -1,14 +1,14 @@
-import * as React from "react";
 import "../static/style.scss";
+import { connect } from "react-redux";
+import { withRouter } from "next/router";
 
-class HomePage extends React.Component {
-  public render() {
-    return (
-      <div>
-        <h1>Hello World</h1>
-      </div>
-    );
-  }
-}
+const HomePage = (state) => {
+  console.log(state);
+  return (
+    <div>
+      <h1>Hello World</h1>
+    </div>
+  );
+};
 
-export default HomePage;
+export default connect((state) => ({ state }))(withRouter(HomePage));
