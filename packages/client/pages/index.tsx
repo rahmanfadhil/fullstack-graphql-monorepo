@@ -1,4 +1,5 @@
 import * as React from "react";
+import "../static/style.scss";
 
 class HomePage extends React.Component {
   public render() {

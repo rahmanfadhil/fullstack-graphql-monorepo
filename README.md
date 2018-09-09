@@ -12,6 +12,7 @@ Features:
 This project includes:
 
 - ReactJS w/ NextJS & Redux
+- Sass
 - Graphql Yoga
 - Prisma & Prisma Binding
 - PostgresQL
